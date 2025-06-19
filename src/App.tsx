@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Lock, Wifi, Eye, Users, Database, AlertTriangle, Smartphone } from 'lucide-react';
+import { Shield, Lock, Eye, AlertTriangle, Smartphone } from 'lucide-react';
 
 interface SecurityTip {
   icon: React.ReactNode;
@@ -15,32 +15,21 @@ function App() {
       title: "Gestión de Contraseñas",
       description: "Protege tus cuentas académicas con contraseñas seguras",
       tips: [
-        "Usa contraseñas únicas para cada cuenta universitaria",
-        "Mínimo 12 caracteres con combinación de letras, números y símbolos",
-        "Utiliza un gestor de contraseñas confiable",
-        "Activa la autenticación de doble factor (2FA) siempre que sea posible"
+        "Usa contraseñas únicas para cada cuenta universitaria.",
+        "Mínimo 12 caracteres con combinación de letras, números y símbolos.",
+        "Utiliza un gestor de contraseñas confiable.",
+        "Activa la autenticación de doble factor (2FA) siempre que sea posible."
       ]
     },
     {
       icon: <AlertTriangle className="w-8 h-8" />,
-      title: "Phishing y Correos Sospechosos",
+      title: "Phishing y Correos Sospechosos.",
       description: "Identifica y evita intentos de estafa por correo electrónico",
       tips: [
-        "Verifica siempre el remitente antes de hacer clic en enlaces",
-        "Nunca compartas credenciales por correo electrónico",
-        "Reporta correos sospechosos al departamento de IT",
-        "Desconfía de ofertas o premios inesperados"
-      ]
-    },
-    {
-      icon: <Wifi className="w-8 h-8" />,
-      title: "Seguridad en Redes WiFi",
-      description: "Navega de forma segura en las redes del campus",
-      tips: [
-        "Conecta solo a redes WiFi oficiales de la universidad",
-        "Evita realizar transacciones bancarias en WiFi público",
-        "Usa VPN para conexiones más seguras",
-        "Mantén actualizados los drivers de tu tarjeta de red"
+        "Verifica siempre el remitente antes de hacer clic en enlaces.",
+        "Nunca compartas credenciales por correo electrónico.",
+        "Reporta correos sospechosos al departamento de TyO.",
+        "Desconfía de ofertas o premios inesperados."
       ]
     },
     {
@@ -48,10 +37,10 @@ function App() {
       title: "Protección de Datos Personales",
       description: "Mantén tu información académica y personal segura",
       tips: [
-        "No compartas tu número de estudiante públicamente",
-        "Configura la privacidad en redes sociales académicas",
-        "Ten cuidado con información sensible en trabajos grupales",
-        "Usa servicios de almacenamiento en la nube seguros"
+        "No compartas tu número de estudiante públicamente.",
+        "Configura la privacidad en redes sociales académicas.",
+        "Ten cuidado con información sensible en trabajos grupales.",
+        "No compartas datos de tu cuenta universitaria."
       ]
     },
     {
@@ -59,10 +48,10 @@ function App() {
       title: "Uso Seguro de Redes Sociales",
       description: "Mantén tu reputación académica intacta online",
       tips: [
-        "Piensa antes de publicar contenido relacionado con la universidad",
-        "Configura perfiles privados para información personal",
-        "No aceptes solicitudes de amistad de desconocidos",
-        "Evita publicar horarios de clases o ubicaciones en tiempo real"
+        "Piensa antes de publicar contenido relacionado con la universidad.",
+        "Configura perfiles privados para información personal.",
+        "No aceptes solicitudes de amistad de desconocidos.",
+        "Evita publicar horarios de clases o ubicaciones en tiempo real."
       ]
     },
     {
@@ -70,10 +59,22 @@ function App() {
       title: "Software y Actualizaciones",
       description: "Mantén tus dispositivos protegidos y actualizados",
       tips: [
-        "Instala actualizaciones del sistema operativo regularmente",
-        "Usa software antivirus en todos tus dispositivos",
-        "Descarga software solo de fuentes oficiales",
-        "Configura actualizaciones automáticas cuando sea posible"
+        "Instala actualizaciones del sistema operativo regularmente.",
+        "Usa software antivirus en todos tus dispositivos.",
+        "Descarga software solo de fuentes oficiales.",
+        "Configura actualizaciones automáticas cuando sea posible."
+      ]
+    }
+    ,
+    {
+      icon: <Lock className="w-8 h-8" />,
+      title: "Uso Seguro de Pen Drives",
+      description: "Evita riesgos al utilizar dispositivos USB en la universidad",
+      tips: [
+        "No conectes pen drives desconocidos o de origen dudoso.",
+        "Analiza los dispositivos USB con un antivirus antes de abrir archivos.",
+        "Evita guardar información sensible sin cifrado en pen drives.",
+        "Expulsa siempre el pen drive de forma segura para prevenir daños."
       ]
     }
   ];
@@ -158,7 +159,7 @@ function App() {
       <footer className="bg-gray-900 text-gray-300 py-8 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sm">
-            © 2025 Universidad Adventista del plata- Departamento de Tecnologías y Operaciones
+            2025 UAP - 4to año de Ingeniería en Sistemas.
           </p>
           <p className="text-xs mt-2 text-gray-400">
             Mantente seguro, mantente informado
